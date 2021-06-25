@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+                *{box-style:border-box;font-family:Arial;}
+			
+		.header-div{display:flex;}
+		.logo{flex:1;}
+		.menubtn{flex:0;align-self:center;visibility:hidden;}		
+
+		nav{display:flex;width:100%;background:black;margin-top:0.2%;height:5%;align-items:center;}
+		nav ul{display:flex;list-style:none;color:white;}
+	
+		.food-poster{width:100%;margin-top:1.5%;}
+
+		.main-box{display:flex;width:100%;margin-top:1.5%;line-height:1.8em;}
+		#main_left-sub_box{background:#f60;flex:1;}
+		#main_right-sub_box{background:baige;margin-left:20px;flex:2;}	
+
+		.left{display:flex;flex-direction:column;}
+		.left_row-one,.left_row-three,.left_row-five{background:#e6f7ff;margin:10px;padding:5px 10px;font-size:20px;}
+		.left_row-four{color:white;}
+		
+		.left_row-two,.left_row-six{padding:10px 25px;color:white;}
+
+		.right_row_two,.right_row_three,.right_row_four{margin-top:40px;}
+		.right_column{display:flex;}	
+		.column_heading{color:#903;}
+		.right_column-2{margin-left:20px;}
+		.food-items{color:green;margin-top:0px;}
+
+		hr{height:2px;border-width:0;color:gray;background-color:gray; margin-top:20px;}
+         
+		.footer-div{display:flex;margin-top:20px;align-items:center;}
+		.footer_div2{flex:1;}
+		.footer_div3_menu{flex:0.5;display:flex;justify-content:flex-end;}
+		.footer_menu{border-right-style:solid;height:20px;padding:5px 5px;}
+		.footer_menu_contact{padding-left:5px;align-self:center;}
+
+		@media screen and (max-width:600px){
+			nav{flex-direction:column;margin-left:0px;}
+			li{text-align:center;}
+				
+			.menubtn{visibility:visible;}
+
+			.food-poster{visibility:hidden;display:none;}
+   
+			nav ul{padding-left:0px;}
+
+			.main-box{flex-direction:column-reverse;}
+			#main_right-sub_box{margin-left:5px;}			
+			.right_column{flex-direction:column;}
+			.right_column-2{margin-left:0px;}				
+			
+			.footer-div{flex-direction:column;align-items:center;}
+			.footer_div3_menu{margin-top:10px;}
+			}
+							
+	</style>
+  </head>
+
+  <body>
+	
+	<header>
+		<div class="header-div">
+			<div class="logo">
+				<img src="Pics/Logo.png" alt="LOGO">
+			</div>
+
+			<div class="menubtn">
+				<img src="Pics/Menu.png" alt="MENU BUTTON IMAGE">
+			</div>
+		</div>
+
+
+			<nav>
+				<ul>
+					<li>
+						Home
+					</li>
+				</ul>
+				<ul>
+					<li>
+						About
+					</li>
+				</ul>
+				<ul>
+					<li>
+						Menu
+					</li>
+				</ul>
+				<ul>
+					<li>
+						Gallery
+					</li>
+				</ul>
+				<ul>
+					<li>
+						Contact us
+					</li>
+				</ul>
+			</nav>
+
+
+		<div>
+			<img class="food-poster" src="Pics/Slide.png" alt="Food Poster">
+		</div>
+	</header>	
+
+
+
+	<main>
+		<div class="main-box">
+			<div id="main_left-sub_box">
+				<div class="left">
+					<p class="left_row-one">Features</p>
+					<div class="left_row-two">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 							non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                	</div>
+				</div>
+
+				<div class="left">
+					<p class="left_row-three">New Summer Menu</p>
+					<div class="left_row-four">
+						<ul>
+							<li>Chicken Schnitzel</li>
+							<li>Chicken Parmigiana</li>
+							<li>Prawn Caesar Salad</li>
+							<li>Thai Noodle Salad</li>
+							<li>Blackened Chicken Supreme</li>
+						</ul>
+                                	</div>
+				</div>
+
+				<div class="left">
+					<p class="left_row-five">We are Open</p>
+					<div class="left_row-six">
+						Monday - Friday     <br /> 
+						   8 AM - 10:30 PM     <br /> <br /> 
+
+						   Saturday - Sunday   <br /> 
+						   8 AM - 11:30 PM     <br /> 
+                                	</div>
+				</div>
+			</div>
+
+			<div id="main_right-sub_box">
+				<div class="right_row_one">
+					<p class="column_heading">Welcome<p>
+					<div class="right_column">
+						<div>
+							<img src="Pics/Chef.png">
+						</div>
+						<div class="right_column-2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 							aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 							        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 							        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>	
+					</div>                                   
+                        	</div>
+
+
+				<div class="right_row_two">
+					<p class="column_heading">Special Offers<p>
+					<div class="right_column">
+						<div>
+							<img src="Pics/Image__1.png">
+						</div>
+						<div class="right_column-2">
+							<p class="food-items">Afghani chicken kabab</p>
+								Duis aute irure in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 									sint occaeca cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum.
+						</div>	
+					</div>                                   
+                        	</div>
+
+
+				<div class="right_row_three">
+					<div class="right_column">
+						<div>
+							<img src="Pics/Image__2.png">
+						</div>
+						<div class="right_column-2">
+							<p class="food-items">Chicken hot & spicy pizza</p>
+								Duis aute irure in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 									sin occaeca cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum.
+						</div>	
+					</div>                                   
+                       	   	</div>
+
+
+				<div class="right_row_four">
+					<div class="right_column">
+						<div>
+							<img src="Pics/Image__3.png">
+						</div>
+						<div class="right_column-2">
+							<p class="food-items">Marinated Grilled Shrimp</p>
+								Duis aute irure in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 									sint occaeca cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum.
+						</div>	
+					</div>                                   
+                        	</div>			
+			</div>
+		<div>
+	</main>
+
+
+	<hr>
+
+	<footer>
+		<div class="footer-div">
+			<div>
+				&copyCopyright 2010 - 2016, Feast.
+			</div>
+
+			<div class="footer_div2">
+				All right reserved
+			</div>
+
+			<div class="footer_div3_menu">
+					<div class="footer_menu">Home</div>
+					<div class="footer_menu">About</div>
+					<div class="footer_menu">Menu</div>
+					<div class="footer_menu">Gallery</div>
+					<div class="footer_menu_contact">Contact us</div>
+			</div>
+		</div>
+	</footer>
+  </body>
+</html>
